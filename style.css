@@ -164,3 +164,36 @@
   width: 60px;
   height: 20px;
 }
+
+.ex-12-button:hover .ex-12-top-white {
+  animation-name: left-to-right;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+  animation-name: right-to-left;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes left-to-right {
+  50% {
+    transform: translate(110px, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes right-to-left {
+  50% {
+    transform: translate(-90px, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+}
